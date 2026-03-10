@@ -17,7 +17,6 @@
 |---------|-------------|--------|------|
 | **v1.0** | Basic P2P WebRTC 1:1 Calls | ✅ Complete | [📹 Watch Demo](https://www.linkedin.com/posts/soham-aswar-18376b22a_webrtc-socketio-reactnative-activity-7389727341763006464-IJmL?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlr5TMBJDyHWD7c5GOlnuECJv02ayZkEs0) |
 | **v2.0** | Auth + Notifications + UI/UX | ✅ Complete | [📹 Watch Demo](https://drive.google.com/file/d/1gxzk3bu--s_-62vQrQr05Cftm6LcJyiW/view?usp=drive_link) |
-| **v3.0** | Mediasoup SFU Architecture | 🚧 In Progress | Coming Soon |
 
 ### Current Status (v2.0)
 
