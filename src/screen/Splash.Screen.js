@@ -17,7 +17,7 @@ const SplashScreen = () => {
   }, [])
 
   return (
-    <View style={style.cantainer}>
+    <View style={style.cantainer}>  
       <Image source={require("../assest/erasebg-transformed.png")} style={style.image} />
       <Text>SplashScreen</Text>
     </View>

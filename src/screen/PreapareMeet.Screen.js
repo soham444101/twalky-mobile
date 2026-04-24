@@ -11,8 +11,8 @@ import {
   ToastAndroid,
 } from 'react-native';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { useWS } from '../services/api/WSProvider';
-import { meetStore } from '../services/meetStorage.services';
+import { useWS } from '../states/context/WSProvider';
+import { meetStore } from '../states/zustan/meetStorage.services';
 import { useUserStore } from '../services/useStorage.services';
 import { addHypen } from '../utlities/Helpers';
 import { RTCView } from 'react-native-webrtc';

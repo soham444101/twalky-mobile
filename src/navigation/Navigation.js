@@ -6,7 +6,7 @@ import PreapareMeetScreen from '../screen/PreapareMeet.Screen';
 import LiveMeetScreen from '../screen/LiveMeet.Screen';
 import JoinMeetScreen from '../screen/JoinMeet.Screen';
 import { navigationRef } from '../utlities/NavigationUtilities';
-import { WSProvider } from '../services/api/WSProvider';
+import { WSProvider } from '../states/context/WSProvider';
 import React from 'react';
 
 const Stack = createNativeStackNavigator();

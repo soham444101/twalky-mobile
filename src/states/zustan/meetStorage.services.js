@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { useUserStore } from '../services/useStorage.services';
+import { useUserStore } from './useStorage.services';
 
 export const meetStore = create()(
     (set, get) => ({

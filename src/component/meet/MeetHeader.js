@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, NativeModules, Platform } from 'react-native';
 import React, { useState, useEffect } from 'react';
-import { meetStore } from '../../services/meetStorage.services';
+import { meetStore } from '../../states/zustan/meetStorage.services';
 import LinearGradient from 'react-native-linear-gradient';
 import { Repeat, Volume2, Headphones, Ear } from 'lucide-react-native';
 import { addHypen } from '../../utlities/Helpers';

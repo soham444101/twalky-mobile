@@ -1,10 +1,10 @@
 import { View, Text, PanResponder, Animated, Image, StyleSheet } from 'react-native';
 import React, { useRef, useMemo, useCallback, useState } from 'react';
 import { RTCView } from 'react-native-webrtc';
-import { meetStore } from '../../services/meetStorage.services';
+import { meetStore } from '../../states/zustan/meetStorage.services';
 import { useUserStore } from '../../services/useStorage.services';
 import { RFValue } from 'react-native-responsive-fontsize';
-import { getInitials, isValidImageUrlCached } from "../../utlities/imageUrlValidater.js"
+// import { getInitials, isValidImageUrlCached } from "../../utlities/imageUrlValidater.js"
 const UserView = ({ containerDimensions, localStream }) => {
   const { width: containerWidth, height: containerHeight } = containerDimensions;
   const { videoOn } = meetStore();
@@ -102,7 +102,7 @@ const UserView = ({ containerDimensions, localStream }) => {
 
   //  Validate photo URL
   const hasValidPhoto = useMemo(() => {
-    return user?.photo && !imageError && isValidImageUrlCached(user.photo);
+    return user?.photo && !imageError ;
   }, [user?.photo, imageError]);
 
   // Handle image load error
@@ -145,7 +145,7 @@ const UserView = ({ containerDimensions, localStream }) => {
     return (
       <View style={styles.noVideo}>
         <Text style={styles.initial}>
-          {getInitials(user?.name)}
+          {(user?.name)}
         </Text>
       </View>
     );

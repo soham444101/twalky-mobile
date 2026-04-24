@@ -1,5 +1,5 @@
 import { io } from "socket.io-client";
-import { SOCKET_URL } from "../config.services";
+import { SOCKET_URL } from "../../services/config.services";
 import { createContext, useContext, useEffect, useRef } from "react";
 import { useStreamStore } from "../useStream.store";
 

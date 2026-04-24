@@ -12,7 +12,7 @@ import { demoParticipant } from "../component/demoPeople.js"
 import { getStream, useStreamStore } from '../services/useStream.store.js';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { goBack, resetAndNavigate } from '../utlities/NavigationUtilities.js';
-import { useWS } from '../services/api/WSProvider.js';
+import { useWS } from '../states/context/WSProvider.js';
 
 const LiveMeetScreen = () => {
 

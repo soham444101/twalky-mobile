@@ -2,11 +2,11 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import React from 'react';
 import { goBack, resetAndNavigate } from '../../utlities/NavigationUtilities';
 import { Mic, MicOff, PhoneOff, Video, VideoOff, Hand, MoreVertical, PhoneCall } from 'lucide-react-native';
-import { meetStore } from '../../services/meetStorage.services';
+import { meetStore } from '../../states/zustan/meetStorage.services';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { LinearGradient } from 'react-native-linear-gradient';
 import { Colors } from '../../utlities/Constant';
-import { useWS } from '../../services/api/WSProvider';
+import { useWS } from '../../states/context/WSProvider';
 const MeetFooter = ({ togglemic, togglevideo, hangup }) => {
   const { micOn, videoOn } = meetStore();
 
