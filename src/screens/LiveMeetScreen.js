@@ -1,12 +1,12 @@
 import { View, Text, BackHandler, ToastAndroid } from 'react-native'
 import React, { useEffect, useMemo, useRef } from 'react'
 import useWebRTC from '../hooks/useWebRTC.js'
-import { useContainerDimensions } from '../hooks/useContainerDiemension';
-import MeetHeader from '../component/meet/MeetHeader';
-import MeetFooter from '../component/meet/MeetFooter';
-import UserView from '../component/meet/UserView';
-import People from '../component/meet/People';
-import NoUserList from '../component/meet/NoUserList';
+import { useContainerDimensions } from '../hooks/useContainerDiemension.js';
+import MeetHeader from '../component/meet/MeetHeader.js';
+import MeetFooter from '../component/meet/MeetFooter.js';
+import UserView from '../component/meet/UserView.js';
+import People from '../component/meet/People.js';
+import NoUserList from '../component/meet/NoUserList.js';
 import { Colors } from '../utlities/Constant.js';
 import { demoParticipant } from "../component/demoPeople.js"
 import { getStream, useStreamStore } from '../services/useStream.store.js';

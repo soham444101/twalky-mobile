@@ -4,12 +4,12 @@ import Homeheader from '../component/home/Home.Header.js';
 import { Calendar, CirclePlus, ClipboardIcon, Video } from 'lucide-react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { useUserStore } from '../services/useStorage.services.js';
-import { navigate } from '../utlities/NavigationUtilities';
+import { navigate } from '../utlities/NavigationUtilities.js';
 import { addHypen, removeHypen, requestAudio, requestVideo } from '../utlities/Helpers.js';
-import { checkSession } from '../services/api/Session.js';
-import { meetStore } from '../states/zustan/meetStorage.services.js';
-import { useWS } from '../states/context/WSProvider.js';
-import { Colors } from '../utlities/Constant';
+import { checkSession } from '../services/api/session.js';
+import { meetStore } from '../services/meetStorage.services.js';
+import { useWS } from '../services/api/WSProvider.js';
+import { Colors } from '../utlities/Constant.js';
 import { useStreamStore } from '../services/useStream.store.js';
 import * as Clipboard from '@react-native-clipboard/clipboard';
 import Toast from '../utlities/Toast.js';
@@ -113,7 +113,7 @@ const HomeScreen = () => {
         style={styles.clipboard}
         onPress={() => copyToClipboard(item)}
       >
-      <ClipboardIcon size={20} color={Colors.text} />
+        <ClipboardIcon size={20} color={Colors.text} />
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.joinButton}

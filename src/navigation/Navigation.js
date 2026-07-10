@@ -1,10 +1,10 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import SplashScreen from '../screen/Splash.Screen';
-import HomeScreen from '../screen/Home.Screen';
-import PreapareMeetScreen from '../screen/PreapareMeet.Screen';
-import LiveMeetScreen from '../screen/LiveMeet.Screen';
-import JoinMeetScreen from '../screen/JoinMeet.Screen';
+import SplashScreen from '../screens/SplashScreen.js';
+import HomeScreen from '../screens/HomeScreen.js';
+import PreapareMeetScreen from '../screens/PreapareMeetScreen.js';
+import LiveMeetScreen from '../screens/LiveMeetScreen.js';
+import JoinMeetScreen from '../screens/JoinMeetScreen.js';
 import { navigationRef } from '../utlities/NavigationUtilities';
 import { WSProvider } from '../states/context/WSProvider';
 import React from 'react';

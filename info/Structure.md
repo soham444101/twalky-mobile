@@ -1,3 +1,39 @@
+
+
+
+assest
+api
+-- create the instance with intersecpter.
+context
+controller
+navigation
+screen
+-- seperate section controller apis and aother 
+utilies
+types
+
+
+
+**Decide what we used for what ?**
+
+Webrtc ,MMKV , Zustan ,React Query (For Server side api called like getting the history or summary)
+
+What is used for what :
+1. That date need ui changes : Zustan (Participant date )
+2. Date change not ui render used useRef
+3. Api data fetch used react query .
+
+**Steps**
+Learn React Query basic
+Restrcture code.
+Recode all.
+Webrtc Works properly
+
+
+
+**What we went wrong ?**
+1. Store the stream in zustan instead of useRef .
+2. 
 1. Braches
 main :Prod code
 depelopment : Dev code
