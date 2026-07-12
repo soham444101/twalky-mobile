@@ -6,10 +6,10 @@ import {
 } from 'react-native-webrtc';
 import { useEffect, useRef, useCallback } from 'react';
 import { useWS } from '../states/context/WSProvider';
-import { useUserStore } from '../services/useStorage.services';
+import { useUserStore } from '../states/zustan/useStorage.services';
 import { meetStore } from '../states/zustan/meetStorage.services';
 import { peerConstraints } from '../utlities/Helpers';
-import { useStreamStore } from '../services/useStream.store';
+import { useStreamStore } from '../states/zustan/useStream.store';
 import { BackHandler, ToastAndroid } from 'react-native';
 import { replace, resetAndNavigate } from '../utlities/NavigationUtilities';
 
@@ -98,8 +98,7 @@ const useWebRTC = () => {
     }, [participants, stream, sessionId, user?.id, emit, setStreamURL]);
 
     // ---- Incoming offer ----
-    const handleReceiveOffer = useCallback(async ({ sender, receiver, offer }) => 
-        {
+    const handleReceiveOffer = useCallback(async ({ sender, receiver, offer }) => {
         if (receiver !== user?.id) return;
 
         let pc = peerConnections.current.get(sender);

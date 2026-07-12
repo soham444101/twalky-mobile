@@ -7,7 +7,7 @@ import {
     ScrollView, TextInput, TouchableOpacity, StyleSheet
 } from 'react-native';
 import React, { useEffect, useState } from 'react';
-import { useUserStore } from '../../services/useStorage.services';
+import { useUserStore } from '../../states/zustan/useStorage.services';
 import { v4 as uuid } from "uuid";
 import { Colors, demoImage } from '../../utlities/Constant';
 import Toast from '../../utlities/Toast';

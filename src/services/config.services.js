@@ -6,9 +6,9 @@ import { Platform } from "react-native";
 
 
 // When we need to Deploy llink then 
-export const BASE_URL = "https://twalky-mobile-backend.onrender.com";
-export const SOCKET_URL = "wss://twalky-mobile-backend.onrender.com";
+export const BASE_URL = "https://twalky-mobile-backend-d8xv.onrender.com";
+export const SOCKET_URL = "https://twalky-mobile-backend-d8xv.onrender.com";
 
-// Use local ip address 
+// Use local ip address
 // export const BASE_URL="http://10.37.79.149:5000";
 // export const SOCKET_URL="ws://10.37.79.149:5000";

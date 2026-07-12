@@ -2,7 +2,7 @@ import { View, Text, PanResponder, Animated, Image, StyleSheet } from 'react-nat
 import React, { useRef, useMemo, useCallback, useState } from 'react';
 import { RTCView } from 'react-native-webrtc';
 import { meetStore } from '../../states/zustan/meetStorage.services';
-import { useUserStore } from '../../services/useStorage.services';
+import { useUserStore } from '../../states/zustan/useStorage.services';
 import { RFValue } from 'react-native-responsive-fontsize';
 // import { getInitials, isValidImageUrlCached } from "../../utlities/imageUrlValidater.js"
 const UserView = ({ containerDimensions, localStream }) => {
@@ -102,7 +102,7 @@ const UserView = ({ containerDimensions, localStream }) => {
 
   //  Validate photo URL
   const hasValidPhoto = useMemo(() => {
-    return user?.photo && !imageError ;
+    return user?.photo && !imageError;
   }, [user?.photo, imageError]);
 
   // Handle image load error

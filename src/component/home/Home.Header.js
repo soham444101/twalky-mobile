@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
 import React, { useEffect, useState } from 'react';
-import { useUserStore } from '../../services/useStorage.services';
+import { useUserStore } from '../../states/zustan/useStorage.services.js';
 import InquireModel from './InquireModel.js';
 import { CircleUser, Menu } from "lucide-react-native";
 import { RFValue } from "react-native-responsive-fontsize";

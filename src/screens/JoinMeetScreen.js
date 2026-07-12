@@ -12,13 +12,13 @@ import { ChevronLeft, Video } from 'lucide-react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { goBack, navigate } from '../utlities/NavigationUtilities';
 import { Colors } from '../utlities/Constant';
-import { useUserStore } from '../services/useStorage.services';
+import { useUserStore } from '../states/zustan/useStorage.services.js';
 import { meetStore } from '../states/zustan/meetStorage.services.js';
 import { useWS } from '../states/context/WSProvider.js';
-import { checkSession, createSession } from '../services/api/Session.js';
+import { checkSession, createSession } from '../services/api/session.js';
 import { removeHypen, requestAudio, requestVideo } from '../utlities/Helpers.js';
 import LinearGradient from 'react-native-linear-gradient';
-import { useStreamStore } from "../services/useStream.store.js";
+import { useStreamStore } from "../states/zustan/useStream.store.js";
 import Toast from "../utlities/Toast.js"
 const JoinMeetScreen = () => {
   const { addSession, user, removeSession, hasVideoPermission, hasAudioPermission } = useUserStore();

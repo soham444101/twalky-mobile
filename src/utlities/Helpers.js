@@ -1,6 +1,6 @@
 import { Platform } from "react-native";
 import { PERMISSIONS, requestMultiple, RESULTS, request } from "react-native-permissions";
-import { useUserStore } from "../services/useStorage.services.js";
+import { useUserStore } from "../states/zustan/useStorage.services";
 
 
 export const requestAudio = async () => {
