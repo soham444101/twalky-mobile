@@ -20,7 +20,9 @@ export const useStreamStore = create(
 
             //   Return existing stream if available
             const existingStream = get().stream;
-            if (existingStream) {
+            if (existingStream?.getTracks()?.every(
+        track => track.readyState === 'live'
+      )) {
                 console.log("Stream already exists, returning it");
                 return existingStream;
             }

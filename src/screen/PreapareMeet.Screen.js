@@ -52,20 +52,20 @@ const PreapareMeetScreen = () => {
 
     on('session-info', handleParticipantUpdate);
 
-    if (stream) {
-      console.log("Stream available, setting initial mic/video state");
-      // toggleLocal("mic");
-      // toggleLocal("video");
-    } else {
-      console.warn("Stream not available yet in PreapareMeetScreen");
-    }
+    // if (stream) {
+    //   console.log("Stream available, setting initial mic/video state");
+    //   // toggleLocal("mic");
+    //   // toggleLocal("video");
+    // } else {
+    //   console.warn("Stream not available yet in PreapareMeetScreen");
+    // }
 
-    console.log("Local stream in Prepare meet:", stream);
+    // console.log("Local stream in Prepare meet:", stream);
 
     return () => {
       off('session-info', handleParticipantUpdate);
     };
-  }, [stream]);
+  }, []);
 
 
   const toggleMicState = useCallback(() => {
@@ -152,7 +152,7 @@ const PreapareMeetScreen = () => {
         // Second press → Hangup and exit
         try {
           clearTimeout(doingFlag.current)
-          deviceStore.getState().removeDevice();
+          //deviceStore.getState().removeDevice();
           clear();
           console.log("user call leave-preaparescreen Event by mobil back button")
         } catch (error) {
