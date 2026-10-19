@@ -1,7 +1,7 @@
 import {
   SafeAreaProvider,
 } from 'react-native-safe-area-context';
-import Navigation from "./src/navigation/Navigation.js"
+import Navigation from "./navigation/Navigation.js"
 
 
 

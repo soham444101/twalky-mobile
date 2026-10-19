@@ -29,7 +29,7 @@
     "react-native-reanimated": "4.3.x",
     "react-native-responsive-fontsize": "^0.5.0",
     "react-native-safe-area-context": "^5.5.2",
-    "react-native-screens": "^4.14.0",
+    "react-native-screens": "4.19.0",
     "react-native-svg": "^15.13.0",
     "react-native-svg-transformer": "^1.5.1",
     "react-native-webrtc": "^124.0.6",
